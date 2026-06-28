@@ -242,3 +242,9 @@ pip install -r requirements.txt
 # add GROQ_API_KEY to .env
 python app.py
 ```
+
+## Demo Video
+
+The video covers: an overview of the two detection signals (LLM classifier via Groq and pure-Python stylometric analyzer) and how their scores combine into a confidence value with asymmetric thresholds; live end-to-end demos of the `POST /submit` endpoint across three cases, clearly AI-generated text, clearly human text, and a borderline uncertain case; a walkthrough of the appeal workflow showing a `POST /appeal` call flipping a record to `under_review`; the rate limiting behavior (10/min, 100/day) with a live loop showing 429s after request 10; the `GET /log` audit trail; and a discussion of two design decisions, the probabilistic label wording and why the appeal path matters more than detection accuracy.
+
+**[Watch the demo (demo.mp4)](demo.mp4)**
